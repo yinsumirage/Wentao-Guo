@@ -1,225 +1,571 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh" data-theme="light">
-<link rel="stylesheet" href="site.css">
-<script src="site.js" defer></script>
+  <link rel="stylesheet" href="site.css" />
+  <script src="site.js" defer></script>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>郭文涛 | Wentao Guo — Robotics & Embodied AI</title>
-  <meta name="description" content="Wentao Guo (郭文涛) — Robotics & Embodied AI student. Underactuated robotic hands, robot cars, and AI/agent systems. Portfolio & publications." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-</head>
-<body>
-  <div class="wrap">
-    <header class="top">
-      <div class="nav">
-        <div class="links">
-          <a href="#about">About</a>
-          <a href="#education">Education</a>
-          <a href="#pubs">Publications</a>
-          <a href="#projects">Projects</a>
-          <a href="#awards">Awards</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="right">
-          <button class="btn icon" id="themeBtn" title="切换明/暗主题" aria-label="Toggle theme">🌓</button>
-          <a class="btn" id="langBtn" title="中/English">中/EN</a>
-          <a class="btn" href="#contact">Contact</a>
-        </div>
-      </div>
-    </header>
-
-    <!-- HERO -->
-    <section id="about" class="section-card">
-      <div class="hero">
-        <img class="avatar" src="assets/img/profile.jpg" alt="Portrait of Wentao Guo" onerror="this.src='https://placehold.co/240x240/EEE/31343C?text=WG'">
-        <div>
-          <h1 class="title" data-en="Wentao Guo" data-zh="郭文涛">郭文涛</h1>
-          <p class="subtitle" data-zh="具身智能 / 机器人方向本科生——专注于连杆灵巧手、软硬协同机器人车、与大模型Agent系统" data-en="Undergrad focused on Embodied AI — underactuated robotic hands, robot cars (HW+SW), and LLM‑based agent systems.">具身智能 / 机器人方向本科生——专注于连杆灵巧手、软硬协同机器人车、与大模型Agent系统</p>
-          <div class="chips">
-            <span class="chip" data-zh="连杆灵巧手" data-en="Underactuated Hands">连杆灵巧手</span>
-            <span class="chip" data-zh="机器人车" data-en="Robot Car">机器人车</span>
-            <span class="chip" data-zh="AI/Agent" data-en="AI/Agent">AI/Agent</span>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>郭文涛 | Wentao Guo — Robotics & Embodied AI</title>
+    <meta
+      name="description"
+      content="Wentao Guo (郭文涛) — Robotics & Embodied AI student. Underactuated robotic hands, robot cars, and AI/agent systems. Portfolio & publications."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <div class="nav">
+          <div class="links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#pubs">Publications</a>
+            <a href="#projects">Projects</a>
+            <a href="#awards">Awards</a>
+            <a href="#contact">Contact</a>
           </div>
-          <div class="contact" id="contact">
-            <a class="btn" href="mailto:yinsumirage@gmail.com">📧 yinsumirage@gmail.com</a>
-            <a class="btn" href="https://github.com/yinsumirage" target="_blank" rel="noreferrer">🐙 GitHub</a>
-            <!-- <a class="btn" href="https://scholar.google.com/" target="_blank" rel="noreferrer">📚 Google Scholar</a> -->
-            <div class="dropdown">
-              <a class="btn">📄 CV / Resume ▾</a>
-              <div class="dropdown-menu">
-                <a href="assets/cv/WentaoGuo_CV_CN.pdf" target="_blank" rel="noreferrer">📄 中文简历</a>
-                <a href="assets/cv/WentaoGuo_CV_EN.pdf" target="_blank" rel="noreferrer">📄 English CV</a>
+          <div class="right">
+            <button
+              class="btn icon"
+              id="themeBtn"
+              title="切换明/暗主题"
+              aria-label="Toggle theme"
+            >
+              🌓
+            </button>
+            <a class="btn" id="langBtn" title="中/English">中/EN</a>
+            <a class="btn" href="#contact">Contact</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- HERO -->
+      <section id="about" class="section-card">
+        <div class="hero">
+          <img
+            class="avatar"
+            src="assets/img/profile.jpg"
+            alt="Portrait of Wentao Guo"
+            onerror="this.src='https://placehold.co/240x240/EEE/31343C?text=WG'"
+          />
+          <div>
+            <h1 class="title" data-en="Wentao Guo" data-zh="郭文涛">郭文涛</h1>
+            <p
+              class="subtitle"
+              data-zh="具身智能 / 机器人方向本科生——专注于连杆灵巧手、软硬协同机器人车、与大模型Agent系统"
+              data-en="Undergrad focused on Embodied AI — underactuated robotic hands, robot cars (HW+SW), and LLM‑based agent systems."
+            >
+              具身智能 /
+              机器人方向本科生——专注于连杆灵巧手、软硬协同机器人车、与大模型Agent系统
+            </p>
+            <div class="chips">
+              <span
+                class="chip"
+                data-zh="连杆灵巧手"
+                data-en="Underactuated Hands"
+                >连杆灵巧手</span
+              >
+              <span class="chip" data-zh="机器人车" data-en="Robot Car"
+                >机器人车</span
+              >
+              <span class="chip" data-zh="AI/Agent" data-en="AI/Agent"
+                >AI/Agent</span
+              >
+            </div>
+            <div class="contact" id="contact">
+              <a class="btn" href="mailto:yinsumirage@gmail.com"
+                >📧 yinsumirage@gmail.com</a
+              >
+              <a
+                class="btn"
+                href="https://github.com/yinsumirage"
+                target="_blank"
+                rel="noreferrer"
+                >🐙 GitHub</a
+              >
+              <!-- <a class="btn" href="https://scholar.google.com/" target="_blank" rel="noreferrer">📚 Google Scholar</a> -->
+              <div class="dropdown">
+                <a class="btn">📄 CV / Resume ▾</a>
+                <div class="dropdown-menu">
+                  <a
+                    href="assets/cv/WentaoGuo_CV_CN.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    >📄 中文简历</a
+                  >
+                  <a
+                    href="assets/cv/WentaoGuo_CV_EN.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    >📄 English CV</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="section-card">
-      <h2 data-zh="教育经历" data-en="Education">教育经历</h2>
-      <div class="edu">
-        <div class="edu-item">
-          <div class="edu-logos">
-            <img class="edu-logo" src="assets/img/normal/bit_logo.svg" alt="BIT logo">
+      <section id="education" class="section-card">
+        <h2 data-zh="教育经历" data-en="Education">教育经历</h2>
+        <div class="edu">
+          <!-- BIT -->
+          <div class="edu-item">
+            <div class="edu-logos">
+              <img
+                class="edu-logo"
+                src="assets/img/school_logo/bit_logo.svg"
+                alt="BIT logo"
+              />
+            </div>
+            <div class="edu-text">
+              <div
+                class="edu-school"
+                data-zh="北京理工大学"
+                data-en="Beijing Institute of Technology"
+              >
+                北京理工大学
+              </div>
+              <div
+                class="edu-major"
+                data-zh="计算机学院 · 徐特立英才班 (本科)"
+                data-en="School of CS · Xu Teli Honors Program (B.Eng.)"
+              >
+                计算机学院 · 徐特立英才班 (本科)
+              </div>
+              <ul class="edu-highlights">
+                <li
+                  data-zh="GPA ~3.7/4（专业前6%）"
+                  data-en="GPA ~3.7/4 (Top 6%)"
+                >
+                  GPA ~3.7/4（专业前6%）
+                </li>
+                <li
+                  data-zh="优秀学生 / 迪文奖学金等"
+                  data-en="Excellent Student & Dewin Scholarship"
+                >
+                  优秀学生 / 迪文奖学金等
+                </li>
+              </ul>
+            </div>
+            <div class="edu-time muted">2022–2026</div>
           </div>
 
-          <div>
-            <div class="edu-meta" data-zh="北京理工大学 · 计算机学院 · 徐特立英才班 (本科)" data-en="Beijing Institute of Technology · CS · Xu Teli Honors Program (B.Eng.)">北京理工大学 · 计算机学院 · 徐特立英才班 (本科)</div>
-            <div class="edu-sub" data-zh="GPA ~3.7/4（专业前6%）；优秀学生/迪文奖学金等" data-en="GPA ~3.7/4 (top ~6%); multiple scholarships">GPA ~3.7/4（专业前6%）；优秀学生/迪文奖学金等</div>
+          <!-- Tsinghua SIGS + Zero One -->
+          <div class="edu-item">
+            <div class="edu-logos">
+              <img
+                class="edu-logo rect"
+                src="assets/img/school_logo/x-institue_logo.jpg"
+                alt="X Institute Logo"
+              />
+              <img
+                class="edu-logo"
+                src="assets/img/school_logo/Tsinghua_University_Logo.svg"
+                alt="Tsinghua Logo"
+              />
+            </div>
+            <div class="edu-text">
+              <div
+                class="edu-school"
+                data-zh="零一学院 · 清华大学钱学森班 (联合培养)"
+                data-en="X-Institue · Tsinghua University Tsien Excellence in Engineering Program (Joint Training)"
+              >
+                零一学院 · 清华大学钱学森班 (联合培养)
+              </div>
+              <div class="edu-major" data-zh="机器人手" data-en="Robotic Hands">
+                机器人手
+              </div>
+              <ul class="edu-highlights">
+                <li
+                  data-zh="研究方向：欠驱动手、具身智能策略"
+                  data-en="Research: underactuated hands & embodied AI policies"
+                >
+                  研究方向：欠驱动手、具身智能策略
+                </li>
+                <li>
+                  <a
+                    href="https://www.x-institute.edu.cn/accompany/xidea"
+                    target="_blank"
+                    rel="noreferrer"
+                    data-zh="钱班进阶式培养计划"
+                    data-en="TEEP Step-by-Step Training Program"
+                  >
+                    钱班进阶式培养计划
+                  </a>
+                </li>
+                <li
+                  data-zh="IROS 2025 一作录用"
+                  data-en="IROS 2025 first-author paper accepted"
+                >
+                  IROS 2025 一作录用
+                </li>
+              </ul>
+            </div>
+            <div class="edu-time muted">2024–now</div>
           </div>
-          <div class="muted">2022–2026</div>
         </div>
-        <div class="edu-item">
-          <div class="edu-logos">
-            <img class="edu-logo"
-                src="assets/img/normal/Tsinghua_University_Logo.svg"
-                alt="Tsinghua University Logo">
-            <img class="edu-logo rect"
-                src="assets/img/normal/x-institue_logo.jpg"
-                alt="X-Institute / Zero One Institute">
-          </div>
+      </section>
 
-          <div>
-            <div class="edu-meta" data-zh="零一学院 ·  清华大学深圳国际研究生院(联合培养)" data-en="X‑Institute · Tsinghua SIGS (Joint Training)">零一学院 · 清华大学深圳国际研究生院 (联合培养)</div>
-            <div class="edu-sub" data-zh="研究方向：欠驱动灵巧手、具身智能策略；IROS 2025 一作录用" data-en="Research: underactuated hands & embodied policies; IROS 2025 1st‑author accepted">研究方向：欠驱动灵巧手、具身智能策略；IROS 2025 一作录用</div>
-          </div>
-          <div class="muted">2024–至今</div>
+      <!-- PUBLICATIONS -->
+      <section id="pubs" class="section-card">
+        <h2 data-zh="论文成果" data-en="Publications">论文成果</h2>
+        <p
+          class="muted"
+          data-zh="点击缩略图查看图集；每篇均可链接到PDF/视频。"
+          data-en="Click thumbnails for gallery; each item can link to PDF/video."
+        >
+          点击缩略图查看图集；每篇均可链接到PDF/视频。
+        </p>
+        <div class="pub">
+          <!-- IROS 2025 accepted -->
+          <article class="pub-item" data-tags="hand">
+            <img
+              class="pub-thumb"
+              src="assets/papers/25_iros/image/抓取照片.png"
+              alt="Hockens‑A Hand"
+              onclick="openGallery('hockensa')"
+            />
+            <div>
+              <div class="badge ok">Accepted · IROS 2025</div>
+              <h3 class="lead">
+                Hockens‑A Hand: Environment‑Constrained Adaptive Pinching &
+                Enveloping
+              </h3>
+              <div class="muted">
+                Wentao Guo*, Yizhou Wang, Wenzeng Zhang (Advisor)
+              </div>
+              <div class="pub-actions">
+                <a
+                  class="btn"
+                  href="assets/papers/25_iros/25_iros_hockensa.pdf"
+                  target="_blank"
+                  >PDF</a
+                >
+                <a
+                  class="btn"
+                  href="#"
+                  onclick="openGallery('hockensa');return false;"
+                  >Images</a
+                >
+                <a
+                  class="btn"
+                  href="assets/papers/25_iros/video.mp4"
+                  target="_blank"
+                  >Video</a
+                >
+              </div>
+            </div>
+          </article>
+          <!-- ROBIO 2025 under review -->
+          <article class="pub-item" data-tags="hand">
+            <img
+              class="pub-thumb"
+              src="assets/papers/25_robio/image/demo集合.png"
+              alt="Hoecken‑D Hand"
+              onclick="openGallery('hoeckend')"
+            />
+            <div>
+              <div class="badge warn">Under Review · ROBIO 2025</div>
+              <h3 class="lead">
+                Hoecken‑D Hand: Linear Parallel Pinching & Self‑Adaptive
+                Grasping
+              </h3>
+              <div class="muted">Wentao Guo*, Wenzeng Zhang (Advisor)</div>
+              <div class="pub-actions">
+                <a
+                  class="btn"
+                  href="assets/papers/25_robio/25_robio_hoeckend.pdf"
+                  target="_blank"
+                  >PDF (preprint)</a
+                >
+                <a
+                  class="btn"
+                  href="#"
+                  onclick="openGallery('hoeckend');return false;"
+                  >Images</a
+                >
+              </div>
+            </div>
+          </article>
+          <!-- 3rd in submission (placeholder) -->
+          <article class="pub-item" data-tags="hand">
+            <img
+              class="pub-thumb"
+              src="assets/papers/26_icra/image/照片.png"
+              alt="Scott Russell variant"
+              onclick="openGallery('srvariant')"
+            />
+            <div>
+              <div class="badge warn">In Submission · ICRA 2026</div>
+              <h3 class="lead">
+                (TBD) Scott Russell Variant for Adaptive Grasp & Lift
+              </h3>
+              <div class="muted">Wentao Guo*, Wenzeng Zhang (Advisor)</div>
+              <div class="pub-actions">
+                <a class="btn" href="#">PDF (coming soon)</a>
+                <a
+                  class="btn"
+                  href="#"
+                  onclick="openGallery('srvariant');return false;"
+                  >Images</a
+                >
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- PUBLICATIONS -->
-    <section id="pubs" class="section-card">
-      <h2 data-zh="论文成果" data-en="Publications">论文成果</h2>
-      <p class="muted" data-zh="点击缩略图查看图集；每篇均可链接到PDF/项目页。" data-en="Click thumbnails for gallery; each item can link to PDF/project.">点击缩略图查看图集；每篇均可链接到PDF/项目页。</p>
-      <div class="pub">
-        <!-- IROS 2025 accepted -->
-        <article class="pub-item" data-tags="hand">
-          <img class="pub-thumb" src="assets/papers/25_iros/image/抓取照片.png" alt="Hockens‑A Hand" onclick="openGallery('hockensa')">
-          <div>
-            <div class="badge ok">Accepted · IROS 2025</div>
-            <h3 class="lead">Hockens‑A Hand: Environment‑Constrained Adaptive Pinching & Enveloping</h3>
-            <div class="muted">Wentao Guo*, Yizhou Wang, Wenzeng Zhang (Advisor)</div>
-            <div class="pub-actions">
-              <a class="btn" href="assets/papers/25_iros/25_iros_hockensa.pdf" target="_blank">PDF</a>
-              <a class="btn" href="#" onclick="openGallery('hockensa');return false;">Images</a>
-              <a class="btn" href="assets/papers/25_iros/video.mp4" target="_blank">Video</a>
+      <!-- PROJECTS -->
+      <section id="projects" class="section-card">
+        <h2 data-zh="项目经历" data-en="Projects">项目经历</h2>
+        <div class="filters">
+          <button
+            class="btn"
+            onclick="filterProjects('*')"
+            data-zh="全部"
+            data-en="All"
+          >
+            全部
+          </button>
+          <button class="btn" onclick="filterProjects('hand')">
+            🔧<span data-zh>连杆手</span
+            ><span data-en style="display: none">Robotic Hand</span>
+          </button>
+          <button class="btn" onclick="filterProjects('robotcar')">
+            🚗<span data-zh>机器人车</span
+            ><span data-en style="display: none">Robot Car</span>
+          </button>
+          <button class="btn" onclick="filterProjects('ai')">
+            🧠<span data-zh>AI/Agent</span
+            ><span data-en style="display: none">AI/Agent</span>
+          </button>
+        </div>
+        <div class="proj-grid" id="projGrid">
+          <!-- Hand / hardware -->
+          <article class="proj" data-cat="hand">
+            <img src="assets/img/projects/25AMSE.jpg" alt="Adaptive Robotic Grippers Project">
+            <div class="pad">
+              <div class="lead" 
+                  data-zh="基于环境约束的多模式自适应夹爪：平夹与铲取切换"
+                  data-en="Adaptive Robotic Grippers for Multi-Mode Grasping with Pinching and Scooping under Environmental Constraints">
+                基于环境约束的多模式自适应夹爪：平夹与铲取切换
+                <span class="status" data-zh="完成" data-en="Completed">完成</span>
+              </div>
+
+              <div class="meta">
+                <a class="badge award" href="https://sites.google.com/site/asmemrc/design-competition-showcase/2025-finalists#h.2oibi1g704mf" target="_blank" rel="noreferrer"
+                  data-zh="🏆 ASME SMRDC 2025 决赛入围" data-en="🏆 ASME SMRDC 2025 Finalist">🏆 ASME SMRDC 2025 决赛入围</a>
+                <a class="badge paper" href="assets/papers/25_iros/25_iros_hockensa.pdf" target="_blank" rel="noreferrer"
+                  data-zh="📄 论文 / 预印本" data-en="📄 Paper / Preprint">📄 论文 / 预印本</a>
+                <a class="badge video" href="https://youtu.be/kNnKri4CBBw" target="_blank" rel="noreferrer"
+                  data-zh="▶️ 演示视频" data-en="▶️ Demo Video">▶️ 演示视频</a>
+              </div>
+
+              <p class="desc" 
+                data-zh="通过直线机构实现竖直适应性，在环境约束下完成平夹与铲取模式切换；3D 打印制作 6 种不同原型对机制进行了系统验证。"
+                data-en="Achieved vertical adaptability via linear linkages, enabling pinch-scoop switching under environmental constraints. Fabricated six 3D-printed prototypes for systematic validation.">
+                通过直线机构实现竖直适应性，在环境约束下完成平夹与铲取模式切换；3D 打印制作 6 种不同原型对机制进行了系统验证。
+              </p>
+
+              <div class="tags">
+                <span class="tag hand">Hand</span>
+                <span class="tag">3D-Print</span>
+                <span class="tag">Kinematics</span>
+              </div>
             </div>
-          </div>
-        </article>
-        <!-- ROBIO 2025 under review -->
-        <article class="pub-item" data-tags="hand">
-          <img class="pub-thumb" src="assets/papers/25_robio/image/demo集合.png" alt="Hoecken‑D Hand" onclick="openGallery('hoeckend')">
-          <div>
-            <div class="badge warn">Under Review · ROBIO 2025</div>
-            <h3 class="lead">Hoecken‑D Hand: Linear Parallel Pinching & Self‑Adaptive Grasping</h3>
-            <div class="muted">Wentao Guo*, Wenzeng Zhang (Advisor)</div>
-            <div class="pub-actions">
-              <a class="btn" href="assets/papers/25_robio/25_robio_hoeckend.pdf" target="_blank">PDF (preprint)</a>
-              <a class="btn" href="#" onclick="openGallery('hoeckend');return false;">Images</a>
+          </article>
+
+          <!-- Robot car (HW+SW) -->
+          <article class="proj" data-cat="robotcar">
+            <img src="assets/img/projects/MoYiXing.png" alt="MoYiXing modular robot car">
+            <div class="pad">
+              <div class="lead"
+                  data-zh="模易形模块化机器人车（激光雷达 + 六自由度机械臂）"
+                  data-en="MoYiXing Modular Robot Car (Lidar + 6-DOF Arm)">
+                模易形模块化机器人车（激光雷达 + 六自由度机械臂）
+                <span class="status" data-zh="开源" data-en="Open-Source">开源</span>
+              </div>
+
+              <div class="meta">
+                <span class="badge award" data-zh="🏆 多项一等奖（含创意赛）" data-en="🏆 Multiple 1st Prizes incl. Innovation Contest">🏆 多项一等奖（含创意赛）</span>
+                <span class="badge award" data-zh="🥈 国际青年创新二等奖" data-en="🥈 Intl. Youth Innovation 2nd Prize">🥈 国际青年创新二等奖</span>
+                <a class="badge repo" href="https://github.com/your-repo" target="_blank" rel="noreferrer"
+                  data-zh="🐙 GitHub 仓库" data-en="🐙 GitHub Repo">🐙 GitHub 仓库</a>
+              </div>
+
+              <p class="desc"
+                data-zh="模块化设计，支持导航、抓取、识别、监控、清扫与对话；可装配多种摄像头并结合 AI 识物。实现 DQN 习惯学习与半自主任务执行，Jetson Nano 端部署。"
+                data-en="Modular design with navigation, grasping, perception, monitoring, cleaning, and dialogue. Supports modular camera setup with AI recognition. Implemented DQN habit-learning and semi-autonomous execution on Jetson Nano.">
+                模块化设计，支持导航、抓取、识别、监控、清扫与对话；可装配多种摄像头并结合 AI 识物。实现 DQN 习惯学习与半自主任务执行，Jetson Nano 端部署。
+              </p>
+
+              <div class="tags">
+                <span class="tag robotcar">RobotCar</span>
+                <span class="tag">ROS2</span>
+                <span class="tag">RL</span>
+              </div>
             </div>
-          </div>
-        </article>
-        <!-- 3rd in submission (placeholder) -->
-        <article class="pub-item" data-tags="hand">
-          <img class="pub-thumb" src="assets/papers/26_icra/image/照片.png" alt="Scott Russell variant" onclick="openGallery('srvariant')">
-          <div>
-            <div class="badge warn">In Submission · ICRA 2026</div>
-            <h3 class="lead">(TBD) Scott Russell Variant for Adaptive Grasp & Lift</h3>
-            <div class="muted">Wentao Guo*, Wenzeng Zhang (Advisor)</div>
-            <div class="pub-actions">
-              <a class="btn" href="#">PDF (coming soon)</a>
-              <a class="btn" href="#" onclick="openGallery('srvariant');return false;">Images</a>
+          </article>
+
+          <!-- AI/Agent -->
+          <article class="proj" data-cat="ai">
+            <img src="assets/img/projects/YiBao.png" alt="YiBao meeting agent">
+            <div class="pad">
+              <div class="lead"
+                  data-zh="议宝 · 会议 Agent（端侧大模型 + 本地数据库 + RAG 优化）"
+                  data-en="YiBao · Meeting Agent (On-device LLM + Local DB + RAG)">
+                议宝 · 会议 Agent（端侧大模型 + 本地数据库 + RAG 优化）
+                <span class="status" data-zh="在研" data-en="In Progress">在研</span>
+              </div>
+
+              <div class="meta">
+                <span class="badge award" data-zh="🏆 开源创新应用赛 国家级三等奖 (4/6)" data-en="🏆 National 3rd Prize (4/6) · Open-Source Innovation">🏆 开源创新应用赛 国家级三等奖 (4/6)</span>
+                <a class="badge repo" href="https://www.osredm.com/p69087132/yibao" target="_blank" rel="noreferrer"
+                  data-zh="🐙 OSRedM 仓库" data-en="🐙 OSRedM Repo">🐙 OSRedM 仓库</a>
+              </div>
+
+              <p class="desc"
+                data-zh="基于九格端侧大模型的会议 Agent：本地数据库、特制总结算法与语音识别，结合 RAG 的三项优化（查询规划、置信门控、对抗鲁棒）以提升会议纪要质量与检索召回。"
+                data-en="Meeting agent built on Jiuge on-device LLM: integrates local DB, custom summarization, and ASR, with three RAG optimizations (query planning, confidence gating, adversarial robustness) for better minutes and retrieval.">
+                基于九格端侧大模型的会议 Agent：本地数据库、特制总结算法与语音识别，结合 RAG 的三项优化（查询规划、置信门控、对抗鲁棒）以提升会议纪要质量与检索召回。
+              </p>
+
+              <div class="tags">
+                <span class="tag ai">AI/Agent</span>
+                <span class="tag">RAG</span>
+                <span class="tag">On-device</span>
+              </div>
             </div>
-          </div>
-        </article>
-      </div>
-    </section>
+          </article>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section-card">
-      <h2 data-zh="项目经历" data-en="Projects">项目经历</h2>
-      <div class="filters">
-        <button class="btn" onclick="filterProjects('*')" data-zh="全部" data-en="All">全部</button>
-        <button class="btn" onclick="filterProjects('hand')">🔧 <span data-zh>连杆手</span><span data-en style="display:none">Hands</span></button>
-        <button class="btn" onclick="filterProjects('robotcar')">🚗 <span data-zh>机器人车</span><span data-en style="display:none">Robot Car</span></button>
-        <button class="btn" onclick="filterProjects('ai')">🧠 <span data-zh>AI/Agent</span><span data-en style="display:none">AI/Agent</span></button>
-      </div>
-      <div class="proj-grid" id="projGrid">
-        <!-- Hand / hardware -->
-        <article class="proj" data-cat="hand">
-          <img src="assets/img/projects/25AMSE.jpg" alt="Hockens series bench tests">
-          <div class="pad">
-            <div class="lead">Underactuated Hands Bench & Kinematics Toolkit</div>
-            <p class="desc">基于 Mathematica/Python 的快速几何/力学分析与参数扫描工具；3D 打印验证、弹簧/行程限位等被动机构设计。</p>
-            <div class="tags"><span class="tag hand">Hand</span><span class="tag">3D‑Print</span><span class="tag">Kinematics</span></div>
-          </div>
-        </article>
-        <!-- Robot car (HW+SW) -->
-        <article class="proj" data-cat="robotcar">
-          <img src="assets/img/projects/MoYiXing.png" alt="MoYiXing robot car">
-          <div class="pad">
-            <div class="lead">MoYiXing 机器人车（Lidar + 6‑DOF Arm）</div>
-            <p class="desc">端到端软硬一体：导航与视觉（YOLOv8），手眼协作抓取，DQN/Habit 学习原型，Jetson Nano 部署。</p>
-            <div class="tags"><span class="tag robotcar">RobotCar</span><span class="tag">ROS2</span><span class="tag">RL</span></div>
-          </div>
-        </article>
-        <!-- AI/Agent -->
-        <article class="proj" data-cat="ai">
-          <img src="assets/img/projects/YiBao.png" alt="RAG agent">
-          <div class="pad">
-            <div class="lead">残障健身问答 Agent（RAG + DPO/GRPO）</div>
-            <p class="desc">面向社区的知识库与问答系统；查询规划优化（DPO/GRPO）、置信门控（GECE）、对抗噪声鲁棒性训练。</p>
-            <div class="tags"><span class="tag ai">AI/Agent</span><span class="tag">RAG</span><span class="tag">DPO/GRPO</span></div>
-          </div>
-        </article>
-        <!-- Tooling / SE -->
-        <article class="proj" data-cat="ai">
-          <img src="https://placehold.co/960x540/png?text=Code+Quality+Analyzer" alt="Code quality analyzer">
-          <div class="pad">
-            <div class="lead">代码质量分析工具（Tree‑sitter）</div>
-            <p class="desc">词法/语法分析、AST 重复检测、可配置阈值与多语言支持；命令行集成测试编排。</p>
-            <div class="tags"><span class="tag ai">SE</span><span class="tag">Tree‑sitter</span><span class="tag">CLI</span></div>
-          </div>
-        </article>
-      </div>
-    </section>
+          <!-- Tooling / SE -->
+          <article class="proj" data-cat="ai">
+            <img src="assets/img/projects/sleep.png" alt="Sleep bias mitigation pipeline">
+            <div class="pad">
+              <div class="lead"
+                  data-zh="睡眠场景下的大模型偏见纠正 Pipeline"
+                  data-en="Bias Mitigation Pipeline for Sleep-Focused LLM Tasks">
+                睡眠场景下的大模型偏见纠正 Pipeline
+                <span class="status" data-zh="完成" data-en="Completed">完成</span>
+              </div>
 
-    <!-- AWARDS -->
-    <section id="awards" class="section-card">
-      <h2 data-zh="荣誉奖项（部分）" data-en="Selected Awards">荣誉奖项（部分）</h2>
-      <div class="awards">
-        <div class="award"><span>RoboCup China & 机器人竞赛（国家级多项一/二等）</span><span>2022–2024</span></div>
-        <div class="award"><span>“挑战杯”国赛/省赛（创新创业/社科赛道）</span><span>2023–2025</span></div>
-        <div class="award"><span>美国大学生数学建模竞赛（MCM/ICM）Meritorious Winner</span><span>2024</span></div>
-        <div class="award"><span>校级优秀学生、科研创新奖、奖学金若干</span><span>2022–2025</span></div>
-      </div>
-    </section>
+              <div class="meta">
+                <span class="badge award" data-zh="🏆 颠覆式创新项目奖" data-en="🏆 Disruptive Innovation Award">🏆 颠覆式创新项目奖</span>
+              </div>
 
-    <section id="contact" class="section-card">
-      <h2 data-zh="联系" data-en="Contact">联系</h2>
-    </section>
+              <p class="desc"
+                data-zh="以睡眠为核心研究对象，构建从睡眠分期、睡眠评分到大模型分析反馈与微调的端到端 Pipeline；通过微调与策略约束降低算法偏见，后续以聚类更新作为持续优化机制。"
+                data-en="Sleep-focused pipeline: from staging and scoring to LLM analysis and fine-tuning. Applied fine-tuning and constraints to reduce bias, with clustering-based updates planned for continuous improvement.">
+                以睡眠为核心研究对象，构建从睡眠分期、睡眠评分到大模型分析反馈与微调的端到端 Pipeline；通过微调与策略约束降低算法偏见，后续以聚类更新作为持续优化机制。
+              </p>
 
-    <footer>
-      <div>© <span id="year"></span> Wentao Guo · Last updated <span id="updated"></span></div>
-      <!-- <div class="muted">Single‑file, fast to deploy on GitHub Pages. Edit placeholders in <code>assets/…</code> paths.</div> -->
-    </footer>
-  </div>
+              <div class="tags">
+                <span class="tag ai">AI/Agent</span>
+                <span class="tag">Bias Mitigation</span>
+                <span class="tag">LLM Fine-tune</span>
+              </div>
+            </div>
+          </article>
 
-  <!-- LIGHTBOX / GALLERY -->
-  <div id="lightbox" style="position:fixed;inset:0;background:#000c;display:none;align-items:center;justify-content:center;backdrop-filter:blur(2px);">
-    <div style="position:absolute;inset:0" onclick="closeGallery()" aria-label="Close"></div>
-    <img id="lbImg" src="" alt="gallery" style="max-width:min(1100px,92vw);max-height:86vh;border-radius:14px;border:1px solid #000;box-shadow:0 20px 60px #000c"/>
-    <button class="btn icon" onclick="prevImg()" style="position:fixed;left:20px">◀</button>
-    <button class="btn icon" onclick="nextImg()" style="position:fixed;right:20px">▶</button>
-    <button class="btn icon" onclick="closeGallery()" style="position:fixed;top:20px;right:20px">✕</button>
-  </div>
-</body>
+        </div>
+      </section>
+
+      <!-- AWARDS -->
+      <section id="awards" class="section-card">
+        <h2 data-zh="荣誉奖项（部分）" data-en="Selected Awards">
+          荣誉奖项（部分）
+        </h2>
+        <div class="awards">
+          <div class="award">
+            <span>RoboCup China & 机器人竞赛（国家级多项一/二等）</span
+            ><span>2022–2024</span>
+          </div>
+          <div class="award">
+            <span>“挑战杯”国赛/省赛（创新创业/社科赛道）</span
+            ><span>2023–2025</span>
+          </div>
+          <div class="award">
+            <span>美国大学生数学建模竞赛（MCM/ICM）Meritorious Winner</span
+            ><span>2024</span>
+          </div>
+          <div class="award">
+            <span>校级优秀学生、科研创新奖、奖学金若干</span
+            ><span>2022–2025</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-card">
+        <h2 data-zh="联系" data-en="Contact">联系</h2>
+      </section>
+
+      <footer>
+        <div>
+          © <span id="year"></span> Wentao Guo · Last updated
+          <span id="updated"></span>
+        </div>
+        <!-- <div class="muted">Single‑file, fast to deploy on GitHub Pages. Edit placeholders in <code>assets/…</code> paths.</div> -->
+      </footer>
+    </div>
+
+    <!-- LIGHTBOX / GALLERY -->
+    <div
+      id="lightbox"
+      style="
+        position: fixed;
+        inset: 0;
+        background: #000c;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(2px);
+      "
+    >
+      <div
+        style="position: absolute; inset: 0"
+        onclick="closeGallery()"
+        aria-label="Close"
+      ></div>
+      <img
+        id="lbImg"
+        src=""
+        alt="gallery"
+        style="
+          max-width: min(1100px, 92vw);
+          max-height: 86vh;
+          border-radius: 14px;
+          border: 1px solid #000;
+          box-shadow: 0 20px 60px #000c;
+        "
+      />
+      <button
+        class="btn icon"
+        onclick="prevImg()"
+        style="position: fixed; left: 20px"
+      >
+        ◀
+      </button>
+      <button
+        class="btn icon"
+        onclick="nextImg()"
+        style="position: fixed; right: 20px"
+      >
+        ▶
+      </button>
+      <button
+        class="btn icon"
+        onclick="closeGallery()"
+        style="position: fixed; top: 20px; right: 20px"
+      >
+        ✕
+      </button>
+    </div>
+  </body>
 </html>

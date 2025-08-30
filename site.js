@@ -34,7 +34,7 @@ $("#langBtn").addEventListener("click", () => {
 });
 $("#themeBtn").addEventListener("click", toggleTheme);
 (function initPrefs() {
-  const lang = localStorage.getItem("lang") || "zh";
+  const lang = localStorage.getItem("lang") || "en";
   const theme =
     localStorage.getItem("theme") ||
     (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
