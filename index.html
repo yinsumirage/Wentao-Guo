@@ -24,13 +24,12 @@
     <div class="wrap">
       <header class="top">
         <div class="nav">
-          <div class="links">
+          <div class="links" id="navLinks">
             <a href="#about">About</a>
             <a href="#education">Education</a>
             <a href="#pubs">Publications</a>
             <a href="#projects">Projects</a>
             <a href="#awards">Awards</a>
-            <a href="#contact">Contact</a>
           </div>
           <div class="right">
             <button
@@ -482,6 +481,8 @@
 
               <div class="meta">
                 <span class="badge award" data-zh="🏆 颠覆式创新项目奖" data-en="🏆 Disruptive Innovation Award">🏆 颠覆式创新项目奖</span>
+                <a class="badge news" href="https://mp.weixin.qq.com/s/fILJC71T2K0f8nhAyzxn6A" target="_blank" rel="noreferrer"
+                  data-zh="📢 X-challenge track 7" data-en="📢 X-challenge track 7">📢 X-challenge track 7</a>
               </div>
 
               <p class="desc"
@@ -494,6 +495,42 @@
                 <span class="tag ai">AI/Agent</span>
                 <span class="tag">Bias Mitigation</span>
                 <span class="tag">LLM Fine-tune</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Challenge Cup · Problem-Driven Special Track (Jiebang Gua Shuai) -->
+          <article class="proj" data-cat="ai">
+            <img src="assets/img/projects/weather.png" alt="Problem-driven digital twin & AI for power grids">
+            <div class="pad">
+              <div class="lead"
+                  data-zh="“一电一滴”· 面向电网韧性的强AI + 数字孪生全景评估与主动防御"
+                  data-en="“Yi-Dian-Yi-Di”: Problem-Driven Digital Twin + Strong AI for Grid Resilience">
+                “一电一滴”· 面向电网韧性的强AI + 数字孪生全景评估与主动防御
+                <span class="status" data-zh="特等奖" data-en="Special Prize">特等奖</span>
+              </div>
+
+              <div class="meta">
+                <span class="badge award"
+                      data-zh="🏆 特等奖 · 挑战杯·揭榜挂帅专项赛"
+                      data-en="🏆 Special Prize · Challenge Cup — Problem-Driven Special Track">
+                  🏆 特等奖 · 挑战杯·揭榜挂帅专项赛
+                </span>
+                <a class="badge news" href="https://mp.weixin.qq.com/s/7oM3LOVDVTd2uuUYfdLXgg" target="_blank" rel="noreferrer"
+                  data-zh="📢 北理工官方公众号报道" data-en="📢 BIT Official WeChat Report">📢 北理工官方公众号报道</a>
+              </div>
+
+              <p class="desc"
+                data-zh="面向极端天气下配电网场景，融合强人工智能与数字孪生：以时间序列模型与本地知识库实现极端天气预警/脆弱性评估与受灾部位预测；构建“电力千问”领域大模型，联结多模态监测与运筹调度，形成主动监测-预警-调度-恢复的一体化防御体系；在数字孪生平台中完成全景可视化与策略推演。"
+                data-en="For distribution grids under extreme weather, we integrate strong AI with digital twins: time-series models + local knowledge base for early warnings, vulnerability assessment, and damage location prediction; an industry LLM (“Electric-Q&A”) connects multimodal monitoring with operations research for proactive monitor-alert-dispatch-recovery; a digital-twin platform provides panoramic visualization and strategy simulation.">
+                面向极端天气下配电网场景，融合强人工智能与数字孪生：以时间序列模型与本地知识库实现极端天气预警/脆弱性评估与受灾部位预测；构建“电力千问”领域大模型，联结多模态监测与运筹调度，形成主动监测-预警-调度-恢复的一体化防御体系；在数字孪生平台中完成全景可视化与策略推演。
+              </p>
+
+              <div class="tags">
+                <span class="tag ai">AI/Agent</span>
+                <span class="tag">Digital Twin</span>
+                <span class="tag">Power Grid</span>
+                <span class="tag">Risk Defense</span>
               </div>
             </div>
           </article>
@@ -516,7 +553,7 @@
 
               <!-- 比赛简称可点到官网/新闻页（可选外链） -->
               <a class="award-link"
-                href="#"
+                href="http://crc.drct-caa.org.cn/"
                 target="_blank" rel="noreferrer"
                 data-zh="RoboCup 创新创意赛（“机器人+” 总决赛）"
                 data-en="RoboCup Innovation ('Robot+' Finals)">
@@ -526,7 +563,6 @@
               <!-- 可选：赛道/说明的芯片（短标签，避免太长） -->
               <div class="chips">
                 <span class="chip" data-zh="国家级" data-en="National">国家级</span>
-                <span class="chip" data-zh="创意赛道" data-en="Innovation Track">创意赛道</span>
               </div>
             </div>
             <div class="award-time" data-zh="2024" data-en="2024">2024</div>
@@ -538,11 +574,12 @@
               <span class="medal gold"
                     data-zh="🏆 一等奖"
                     data-en="🏆 1st Prize">🏆 一等奖</span>
-              <span
+              <a class="award-link"
+                href="https://robotcontest2024.moocollege.com/"
                 data-zh="中国高校智能机器人创意大赛（第七届）"
                 data-en="China Univ. Intelligent Robot Creative Competition (7th)">
                 中国高校智能机器人创意大赛（第七届）
-              </span>
+              </a>
               <div class="chips">
                 <span class="chip" data-zh="国家级" data-en="National">国家级</span>
               </div>
@@ -556,11 +593,12 @@
               <span class="medal silver"
                     data-zh="🥈 二等奖"
                     data-en="🥈 2nd Prize">🥈 二等奖</span>
-              <span
+              <a class="award-link"
+                href="http://robo-maker.org/"
                 data-zh="中国智能机器人格斗及竞技大赛（视觉对抗）"
                 data-en="China Intelligent Robot Combat & Competition (Vision-based Antagonism)">
                 中国智能机器人格斗及竞技大赛（视觉对抗）
-              </span>
+              </a>
               <div class="chips">
                 <span class="chip" data-zh="国家级" data-en="National">国家级</span>
               </div>
@@ -573,11 +611,31 @@
             <div class="award-left">
               <span class="medal silver"
                     data-zh="🥈 二等奖"
-                    data-en="🥈 2nd Prize">🥈 二等奖</span>
-              <span
+                    data-en="🥈 2nd Prize">🥈 二等奖
+              </span>
+              <a class="award-link"
+                href="https://iyaic.com/"
                 data-zh="国际青年人工智能大赛（第六届）"
                 data-en="International Youth AI Competition (6th)">
                 国际青年人工智能大赛（第六届）
+              </a>
+              <div class="chips">
+                <span class="chip" data-zh="国家级" data-en="National">国家级</span>
+              </div>
+            </div>
+            <div class="award-time" data-zh="2024" data-en="2024">2024</div>
+          </div>
+
+          <!-- 5. 挑战杯 揭榜挂帅专项赛 特等奖 -->
+          <div class="award">
+            <div class="award-left">
+              <span class="medal gold"
+                    data-zh="🏆 特等奖"
+                    data-en="🏆 Special Prize">🏆 特等奖</span>
+              <span
+                data-zh="挑战杯 揭榜挂帅专项赛"
+                data-en="Challenge Cup — Problem-Driven Special Track (Jiebang Gua Shuai)">
+                挑战杯 揭榜挂帅专项赛
               </span>
               <div class="chips">
                 <span class="chip" data-zh="国家级" data-en="National">国家级</span>
@@ -586,12 +644,43 @@
             <div class="award-time" data-zh="2024" data-en="2024">2024</div>
           </div>
 
+          <!-- 6. 开源创新应用赛 三等奖 -->
+          <div class="award">
+            <div class="award-left">
+              <span class="medal bronze"
+                    data-zh="🥉 三等奖"
+                    data-en="🥉 3rd Prize">🥉 三等奖</span>
+              <span
+                data-zh="开源创新应用赛"
+                data-en="Open-Source Innovation Competition">
+                开源创新应用赛
+              </span>
+              <div class="chips">
+                <span class="chip" data-zh="国家级" data-en="National">国家级</span>
+              </div>
+            </div>
+            <div class="award-time" data-zh="2024" data-en="2024">2024</div>
+          </div>
+
+          <!-- 7. 美国大学生数学建模大赛 MCM/ICM -->
+          <div class="award">
+            <div class="award-left">
+              <span class="medal silver"
+                    data-zh="🏅 M奖"
+                    data-en="🏅 Meritorious Winner">🏅 M奖</span>
+              <span
+                data-zh="美国大学生数学建模大赛 (MCM/ICM)"
+                data-en="Mathematical Contest in Modeling (MCM/ICM)">
+                美国大学生数学建模大赛 (MCM/ICM)
+              </span>
+              <div class="chips">
+                <span class="chip" data-zh="国际级" data-en="International">国际级</span>
+              </div>
+            </div>
+            <div class="award-time" data-zh="2025" data-en="2025">2025</div>
+          </div>
+
         </div>
-      </section>
-
-
-      <section id="contact" class="section-card">
-        <h2 data-zh="联系" data-en="Contact">联系</h2>
       </section>
 
       <footer>

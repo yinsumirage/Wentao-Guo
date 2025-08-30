@@ -60,6 +60,7 @@ header.top {
   justify-content: space-between;
   padding: 10px 0;
 }
+
 .nav .links a {
   margin: 0 8px;
   font-weight: 600;
@@ -69,6 +70,8 @@ header.top {
   align-items: center;
   gap: 10px;
 }
+
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -327,8 +330,9 @@ h3 {
 }
 
 .proj img {
-  aspect-ratio: 16/9;
+  height: auto;
   object-fit: cover;
+  max-height: 300px;
   border-bottom: 1px solid var(--muted);
   width: 100%;
   display: block;
@@ -420,6 +424,17 @@ h3 {
   border-color: #c7d2fe;
   color: #3730a3;
 }
+.badge.news{
+  /* 轻盈的新闻蓝调 */
+  background: #f0f9ff;         /* 明亮底色 */
+  border-color: #bae6fd;       /* 边框 */
+  color: #075985;              /* 文本（深蓝青） */
+}
+.badge.news:hover{
+  background: #e0f2fe;
+  border-color: #7dd3fc;
+}
+
 
 .badge.ok {
   background:#e8fff2;
@@ -453,6 +468,15 @@ h3 {
   border-color: #818cf8;
   color: #c7d2fe;
 }
+[data-theme="dark"] .badge.news{
+  background: #08222b;         /* 深青蓝底 */
+  border-color: #155e75;
+  color: #a5f3fc;
+}
+[data-theme="dark"] .badge.news:hover{
+  background: #0b2a36;
+  border-color: #0891b2;
+}
 
 /* 让徽章里的链接颜色继承 */
 .badge a {
@@ -477,10 +501,16 @@ h3 {
   font-size: 13px;
   font-weight: 700;
   border-radius: 999px;
-  border: 1px solid var(--muted);
-  background: #eef2ff;
+  border:1px solid color-mix(in oklab, var(--muted) 70%, var(--fg) 30%);
+  background: color-mix(in oklab, var(--fg) 6%, var(--bg)); 
   color: var(--fg);
 }
+
+[data-theme="dark"] .tag{
+  background: color-mix(in oklab, var(--fg) 14%, var(--bg));
+  border-color: color-mix(in oklab, var(--muted) 40%, var(--fg) 60%);
+}
+
 .tag.hand {
   background: color-mix(in oklab, var(--tag-hand) 22%, transparent);
 }

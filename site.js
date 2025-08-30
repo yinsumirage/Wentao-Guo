@@ -1,4 +1,13 @@
 // === Language & Theme ===
+function relayoutMasonry(){
+  if (!msnry) return;
+  // 让 DOM 先完成文本变更再排版
+  requestAnimationFrame(() => {
+    msnry.reloadItems();
+    msnry.layout();
+  });
+}
+
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
 const setLang = (lang) => {
@@ -97,6 +106,8 @@ function prevImg() {
 
 let msnry = null;
 const grid = document.querySelector('.proj-grid');
+const ro = new ResizeObserver(() => { relayoutMasonry(); }); // 或 relayoutMasonryStable()
+grid.querySelectorAll('.proj').forEach(card => ro.observe(card));
 
 function initMasonry() {
   if (!grid) return;
