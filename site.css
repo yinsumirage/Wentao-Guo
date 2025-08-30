@@ -176,6 +176,7 @@ header.top {
 }
 .muted {
   color: var(--sub);
+  margin: 8px 0 8px;
 }
 .contact {
   display: flex;
@@ -199,7 +200,7 @@ h2 {
   font-size: 22px;
 }
 h3 {
-  margin: 20px 0 8px;
+  margin: 8px 0 8px;
 }
 
 /* Education */
