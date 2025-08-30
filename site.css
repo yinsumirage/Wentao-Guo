@@ -292,27 +292,40 @@ h3 {
 }
 
 /* =============== Projects 卡片 =============== */
-.proj-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 14px;
+.proj-grid{
+  margin: 0 auto;
 }
-.proj {
-  grid-column: span 6;
-  display: flex;
-  flex-direction: column;
+
+/* 列宽基准：和 .proj 同宽；间距基准 */
+.grid-sizer, .proj { width: 100%; }   /* 默认手机一列 */
+.gutter-sizer { width: 14px; }        /* 间距（和 Masonry 的 gutter 同步） */
+
+/* >= 900px: 两列 */
+@media (min-width: 1200px){
+  .grid-sizer, .proj { width: calc((100% - 14px) / 2); } /* 2 列，减去一个 gutter */
+}
+
+/* >= 1300px: 三列 */
+@media (min-width: 1800px){
+  .grid-sizer, .proj { width: calc((100% - 2*14px) / 3); } /* 3 列，减去两个 gutter */
+}
+
+.proj{
+  margin-bottom: 14px;
+  display: block;
   background: var(--bg);
   border: 1px solid var(--muted);
   border-radius: 14px;
   overflow: hidden;
-  transition: transform 0.15s ease, box-shadow 0.15s ease,
-    border-color 0.15s ease;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
+
 .proj:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow);
   border-color: color-mix(in oklab, var(--muted), var(--primary) 25%);
 }
+
 .proj img {
   aspect-ratio: 16/9;
   object-fit: cover;
@@ -323,6 +336,10 @@ h3 {
 .proj .pad {
   padding: 14px;
 }
+
+/* 过滤时隐藏卡片，让 Masonry 忽略它 */
+.proj.hidden { display: none !important; }
+
 .proj .lead {
   font-weight: 800;
   font-size: 18px;
@@ -367,7 +384,9 @@ h3 {
   align-items: center;
   gap: 6px;
   padding: 4px 10px;
-  font-size: 12px;
+  font-size: 13px;
+  line-height: 1.4; 
+  min-height: 39px;
   font-weight: 600;
   border-radius: 999px;
   border: 1px solid var(--muted);
@@ -484,19 +503,67 @@ h3 {
   font-size: 14px;
   border-radius: 999px;
 }
+#projects .filters .btn.active{
+  background: var(--primary);
+  color: #fff;
+  border-color: transparent;
+}
 
-/* Awards */
-.awards {
-  display: grid;
-  gap: 10px;
+
+/* ===== Awards 列表 ===== */
+.awards{ display:grid; gap:10px; }
+.award{
+  display:grid;
+  grid-template-columns: 1fr auto; /* 左内容 + 右侧时间 */
+  align-items:center;
+  gap:10px;
+  padding:10px 12px;
+  border:1px dashed var(--muted);
+  border-radius:12px;
+  background: var(--bg);
 }
-.award {
-  display: flex;
-  justify-content: space-between;
-  border: 1px dashed var(--muted);
-  padding: 10px 12px;
-  border-radius: 12px;
+
+/* 左侧内容分块：等级徽章 + 文本 + 可选外链 */
+.award-left{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.award-link{
+  color: var(--fg);
+  text-decoration: none;
 }
+.award-link:hover{ text-decoration: underline; }
+
+/* 日期 */
+.award-time{
+  white-space:nowrap;
+  font-size:14px;
+  color: var(--sub);
+}
+
+/* 等级徽章：1/2/3 等（用你现有 badge 体系的迷你版） */
+.medal{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:3px 8px; font-size:12px; font-weight:700;
+  border-radius:999px; border:1px solid var(--muted);
+  background:var(--bg); color:var(--fg);
+}
+.medal.gold   { background:#fff8e1; border-color:#fde68a; color:#92400e; } /* 🏆 一等奖 */
+.medal.silver { background:#eef2ff; border-color:#c7d2fe; color:#3730a3; } /* 🥈 二等奖 */
+.medal.bronze { background:#fef3c7; border-color:#fcd34d; color:#7c2d12; } /* 🥉 三等奖 */
+
+/* 小标签：比赛简称/赛道等（可多枚） */
+.chips{ display:flex; flex-wrap:wrap; gap:6px; }
+.chip{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:4px 10px; font-size:12px; font-weight:600;
+  border:1px solid var(--muted); border-radius:999px;
+  background: color-mix(in oklab, var(--primary) 8%, var(--bg));
+}
+
+/* 窄屏：把时间换到下一行左侧 */
+@media (max-width: 600px){
+  .award{ grid-template-columns: 1fr; }
+  .award-time{ justify-self:start; }
+}
+
 
 /* Footer */
 footer {
@@ -527,14 +594,5 @@ footer {
   }
   .edu-logo.rect {
     width: 88px;
-  }
-  .proj {
-    grid-column: span 12;
-  }
-  .proj .lead {
-    font-size: 17px;
-  }
-  .proj .desc {
-    font-size: 14.5px;
   }
 }

@@ -44,14 +44,6 @@ $("#themeBtn").addEventListener("click", toggleTheme);
   $("#updated").textContent = new Date().toISOString().slice(0, 10);
 })();
 
-// === Project filtering ===
-function filterProjects(cat) {
-  $$("#projGrid .proj").forEach((card) => {
-    card.style.display =
-      cat === "*" || card.getAttribute("data-cat") === cat ? "" : "none";
-  });
-}
-
 // === Lightbox Galleries ===
 const galleries = {
   hockensa: [
@@ -101,4 +93,44 @@ function prevImg() {
   if (!gKey) return;
   gIdx = (gIdx - 1 + galleries[gKey].length) % galleries[gKey].length;
   $("#lbImg").src = galleries[gKey][gIdx];
+}
+
+let msnry = null;
+const grid = document.querySelector('.proj-grid');
+
+function initMasonry() {
+  if (!grid) return;
+  msnry = new Masonry(grid, {
+    // 只布局可见项
+    itemSelector: '.proj:not(.hidden)',
+    columnWidth:  '.grid-sizer',
+    gutter:       '.gutter-sizer',
+    percentPosition: true,
+    fitWidth: false,
+    transitionDuration: 0
+  });
+}
+
+window.addEventListener('load', () => {
+  initMasonry();
+  filterProjects('*');
+});
+
+function filterProjects(cat){
+  if (!grid) return;
+  // 1) 切换可见性
+  grid.querySelectorAll('.proj').forEach(card => {
+    const ok = (cat === '*') || (card.dataset.cat === cat);
+    card.classList.toggle('hidden', !ok);
+  });
+
+  // 2) 彻底重建 Masonry（避免旧缓存导致的“留坑/错位”）
+  if (msnry) msnry.destroy();
+  // 等一帧让 display:none 生效，再重建
+  requestAnimationFrame(() => {
+    initMasonry();
+    // 如果你想有过渡动画，把 transitionDuration 设回 '0.2s' 并在这里调用 msnry.layout()
+  });
+  document.querySelectorAll('#projects .filters .btn')
+      .forEach(b => b.classList.toggle('active', b.getAttribute('onclick')?.includes(`'${cat}'`)));
 }

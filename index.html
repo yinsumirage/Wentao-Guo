@@ -2,6 +2,8 @@
 <html lang="zh" data-theme="light">
   <link rel="stylesheet" href="site.css" />
   <script src="site.js" defer></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
 
   <head>
     <meta charset="utf-8" />
@@ -157,7 +159,7 @@
             <div class="edu-time muted">2022–2026</div>
           </div>
 
-          <!-- Tsinghua SIGS + Zero One -->
+          <!-- Tsinghua SIGS + X Institute -->
           <div class="edu-item">
             <div class="edu-logos">
               <img
@@ -174,13 +176,13 @@
             <div class="edu-text">
               <div
                 class="edu-school"
-                data-zh="零一学院 · 清华大学钱学森班 (联合培养)"
-                data-en="X-Institue · Tsinghua University Tsien Excellence in Engineering Program (Joint Training)"
+                data-zh="零一学院 (零一学子)"
+                data-en="X-Institue (X-Scholar)"
               >
-                零一学院 · 清华大学钱学森班 (联合培养)
+                零一学院 (零一学子)
               </div>
-              <div class="edu-major" data-zh="机器人手" data-en="Robotic Hands">
-                机器人手
+              <div class="edu-major" data-zh="清华大学钱学森班 (联合培养)" data-en="Tsinghua University Tsien Excellence in Engineering Program (Joint Training)">
+                清华大学钱学森班 (联合培养)
               </div>
               <ul class="edu-highlights">
                 <li
@@ -235,8 +237,7 @@
             <div>
               <div class="badge ok">Accepted · IROS 2025</div>
               <h3 class="lead">
-                Hockens‑A Hand: Environment‑Constrained Adaptive Pinching &
-                Enveloping
+                A Novel Robot Hand with Hoeckens Linkages and Soft Phalanges for Scooping and Self-Adaptive Grasping in Environmental Constraints
               </h3>
               <div class="muted">
                 Wentao Guo*, Yizhou Wang, Wenzeng Zhang (Advisor)
@@ -348,6 +349,8 @@
           </button>
         </div>
         <div class="proj-grid" id="projGrid">
+          <div class="grid-sizer"></div>
+          <div class="gutter-sizer"></div>
           <!-- Hand / hardware -->
           <article class="proj" data-cat="hand">
             <img src="assets/img/projects/25AMSE.jpg" alt="Adaptive Robotic Grippers Project">
@@ -394,10 +397,29 @@
               </div>
 
               <div class="meta">
-                <span class="badge award" data-zh="🏆 多项一等奖（含创意赛）" data-en="🏆 Multiple 1st Prizes incl. Innovation Contest">🏆 多项一等奖（含创意赛）</span>
-                <span class="badge award" data-zh="🥈 国际青年创新二等奖" data-en="🥈 Intl. Youth Innovation 2nd Prize">🥈 国际青年创新二等奖</span>
-                <a class="badge repo" href="https://github.com/your-repo" target="_blank" rel="noreferrer"
-                  data-zh="🐙 GitHub 仓库" data-en="🐙 GitHub Repo">🐙 GitHub 仓库</a>
+                <span class="badge award"
+                      data-zh="🏆 国家级一等奖 · RoboCup 创新创意赛"
+                      data-en="🏆 National 1st Prize · RoboCup Innovation">
+                  🏆 国家级一等奖 · RoboCup 创新创意赛
+                </span>
+
+                <span class="badge award"
+                      data-zh="🏆 国家级一等奖 · 高校机器人创意赛"
+                      data-en="🏆 National 1st Prize · Univ. Robot Creative">
+                  🏆 国家级一等奖 · 高校机器人创意赛
+                </span>
+
+                <span class="badge award"
+                      data-zh="🥈 国家级二等奖 · 智能机器人格斗赛"
+                      data-en="🥈 National 2nd Prize · Robot Combat">
+                  🥈 国家级二等奖 · 智能机器人格斗赛
+                </span>
+
+                <span class="badge award"
+                      data-zh="🥈 国家级二等奖 · 国际青年 AI 大赛"
+                      data-en="🥈 National 2nd Prize · Intl. Youth AI Comp.">
+                  🥈 国家级二等奖 · 国际青年 AI 大赛
+                </span>
               </div>
 
               <p class="desc"
@@ -419,16 +441,18 @@
             <img src="assets/img/projects/YiBao.png" alt="YiBao meeting agent">
             <div class="pad">
               <div class="lead"
-                  data-zh="议宝 · 会议 Agent（端侧大模型 + 本地数据库 + RAG 优化）"
+                  data-zh="议宝 · 会议 Agent(端侧大模型+本地数据库+RAG 优化)"
                   data-en="YiBao · Meeting Agent (On-device LLM + Local DB + RAG)">
-                议宝 · 会议 Agent（端侧大模型 + 本地数据库 + RAG 优化）
+                议宝 · 会议 Agent(端侧大模型+本地数据库+RAG 优化)
                 <span class="status" data-zh="在研" data-en="In Progress">在研</span>
               </div>
 
               <div class="meta">
-                <span class="badge award" data-zh="🏆 开源创新应用赛 国家级三等奖 (4/6)" data-en="🏆 National 3rd Prize (4/6) · Open-Source Innovation">🏆 开源创新应用赛 国家级三等奖 (4/6)</span>
+                <a class="badge award" href="https://www.osredm.com/competition/cyyy/notice" target="_blank" rel="noreferrer" data-zh="🥉 开源创新应用赛 国家级三等奖 (4/6)" data-en="🥉 National 3rd Prize (4/6) · Open-Source Innovation">🥉 开源创新应用赛 国家级三等奖 (4/6)</a>
                 <a class="badge repo" href="https://www.osredm.com/p69087132/yibao" target="_blank" rel="noreferrer"
                   data-zh="🐙 OSRedM 仓库" data-en="🐙 OSRedM Repo">🐙 OSRedM 仓库</a>
+                <a class="badge video" href="https://www.osredm.com/p69087132/yibao/tree/master/%E5%B1%95%E7%A4%BA%E8%A7%86%E9%A2%91.mp4" target="_blank" rel="noreferrer"
+                  data-zh="▶️ 演示视频" data-en="▶️ Demo Video">▶️ 演示视频</a>
               </div>
 
               <p class="desc"
@@ -479,28 +503,92 @@
 
       <!-- AWARDS -->
       <section id="awards" class="section-card">
-        <h2 data-zh="荣誉奖项（部分）" data-en="Selected Awards">
-          荣誉奖项（部分）
-        </h2>
+        <h2 data-zh="获奖与荣誉" data-en="Awards & Honors">获奖与荣誉</h2>
+
         <div class="awards">
+
+          <!-- 1. RoboCup China Open — “Robot+” Innovation（国家级一等奖） -->
           <div class="award">
-            <span>RoboCup China & 机器人竞赛（国家级多项一/二等）</span
-            ><span>2022–2024</span>
+            <div class="award-left">
+              <span class="medal gold"
+                    data-zh="🏆 一等奖"
+                    data-en="🏆 1st Prize">🏆 一等奖</span>
+
+              <!-- 比赛简称可点到官网/新闻页（可选外链） -->
+              <a class="award-link"
+                href="#"
+                target="_blank" rel="noreferrer"
+                data-zh="RoboCup 创新创意赛（“机器人+” 总决赛）"
+                data-en="RoboCup Innovation ('Robot+' Finals)">
+                RoboCup 创新创意赛（“机器人+” 总决赛）
+              </a>
+
+              <!-- 可选：赛道/说明的芯片（短标签，避免太长） -->
+              <div class="chips">
+                <span class="chip" data-zh="国家级" data-en="National">国家级</span>
+                <span class="chip" data-zh="创意赛道" data-en="Innovation Track">创意赛道</span>
+              </div>
+            </div>
+            <div class="award-time" data-zh="2024" data-en="2024">2024</div>
           </div>
+
+          <!-- 2. 高校机器人创意大赛（国家级一等奖） -->
           <div class="award">
-            <span>“挑战杯”国赛/省赛（创新创业/社科赛道）</span
-            ><span>2023–2025</span>
+            <div class="award-left">
+              <span class="medal gold"
+                    data-zh="🏆 一等奖"
+                    data-en="🏆 1st Prize">🏆 一等奖</span>
+              <span
+                data-zh="中国高校智能机器人创意大赛（第七届）"
+                data-en="China Univ. Intelligent Robot Creative Competition (7th)">
+                中国高校智能机器人创意大赛（第七届）
+              </span>
+              <div class="chips">
+                <span class="chip" data-zh="国家级" data-en="National">国家级</span>
+              </div>
+            </div>
+            <div class="award-time" data-zh="2024" data-en="2024">2024</div>
           </div>
+
+          <!-- 3. 中国智能机器人格斗及竞技大赛（视觉对抗）国家级二等奖 -->
           <div class="award">
-            <span>美国大学生数学建模竞赛（MCM/ICM）Meritorious Winner</span
-            ><span>2024</span>
+            <div class="award-left">
+              <span class="medal silver"
+                    data-zh="🥈 二等奖"
+                    data-en="🥈 2nd Prize">🥈 二等奖</span>
+              <span
+                data-zh="中国智能机器人格斗及竞技大赛（视觉对抗）"
+                data-en="China Intelligent Robot Combat & Competition (Vision-based Antagonism)">
+                中国智能机器人格斗及竞技大赛（视觉对抗）
+              </span>
+              <div class="chips">
+                <span class="chip" data-zh="国家级" data-en="National">国家级</span>
+              </div>
+            </div>
+            <div class="award-time" data-zh="2024" data-en="2024">2024</div>
           </div>
+
+          <!-- 4. 国际青年 AI 大赛 国家级二等奖（=三等奖请用 bronze） -->
           <div class="award">
-            <span>校级优秀学生、科研创新奖、奖学金若干</span
-            ><span>2022–2025</span>
+            <div class="award-left">
+              <span class="medal silver"
+                    data-zh="🥈 二等奖"
+                    data-en="🥈 2nd Prize">🥈 二等奖</span>
+              <span
+                data-zh="国际青年人工智能大赛（第六届）"
+                data-en="International Youth AI Competition (6th)">
+                国际青年人工智能大赛（第六届）
+              </span>
+              <div class="chips">
+                <span class="chip" data-zh="国家级" data-en="National">国家级</span>
+              </div>
+            </div>
+            <div class="award-time" data-zh="2024" data-en="2024">2024</div>
           </div>
+
         </div>
       </section>
+
 
       <section id="contact" class="section-card">
         <h2 data-zh="联系" data-en="Contact">联系</h2>
